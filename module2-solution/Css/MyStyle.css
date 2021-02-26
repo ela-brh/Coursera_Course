@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+.myDiv{
+     border: 1px solid black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 30%;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+#p1{
+    background-color: gray;
+ position: relative;
+ 
+}
+
+#sec1{
+    background-color: pink;
+    position:absolute;
+    width:80px;
+    right:0px;
+    top:0px;
+    border: 1px solid black;
+}
+
+#p2{
+    background-color:gray;
+    position: relative;
+}
+
+
+#sec2{
+    background-color: red;
+    position: absolute;   
+    width:80px;
+    right:0px;
+    top:0px;
+    border: 1px solid black;
+
+} 
+
+#p3{
+    background-color: gray;
+    position: relative;
+}
+
+
+#sec3{
+    background-color: yellow;
+    position: absolute;   
+    width:80px;
+    right:0px;
+    top:0px;
+        border: 1px solid black;
+
+} 
+/*** Large Device **/
+@media (min-width:992px ){
+    #p1{
+        width: 30%;
+    }
+    #p3{
+        width: 30%;
+    }
+    #p3{
+        width: 30%;
+    }
+
+}
+/***  Medium Device **/
+@media (min-width:768px ) and (max-width:991px){
+    #p1{
+        width: 45%;
+    }
+    #p2{
+        width: 45%;
+    }
+    #p3{
+        width: 90%;
+    }
+    
+}
+/*** small device **/ 
+@media  (max-width:767px){
+    #p1{
+        width: 90%;
+    }
+    #p2{
+        width: 90%;
+    }
+    #p3{
+        width: 90%;
+    }
+}
